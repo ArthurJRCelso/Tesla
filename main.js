@@ -26,7 +26,4 @@ function closeAuto() {
     }
 }
 
-
-console.log(width)
-
  
