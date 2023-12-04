@@ -12,6 +12,10 @@
     --bg-button2: rgba(255, 255, 255, 0.65);
 }
 
+html {
+    scroll-snap-type: y mandatory;
+}
+
 body {
     font-size: 1.6rem;
     font-family: 'M PLUS 1', sans-serif;
@@ -76,6 +80,10 @@ header nav.right {
     text-align: right;
 }
 
+.visibility {
+    right: 0%;;
+}
+
 aside {
     position: fixed;
     z-index: 4;
@@ -87,6 +95,8 @@ aside {
 
     display: flex;
     flex-direction: column;
+
+    transition: right 0.5s ease-in-out;
 }
 
 aside svg.arrow {
@@ -161,11 +171,15 @@ section {
     height: 100vh;
     background-position: center;
     background-size: cover;
+
+    scroll-snap-align: start;
 }
 
 section .description {
     display: grid;
     grid-template-rows: min-content auto min-content;
+
+    position: fixed;
 
     width: 100%;
     height: 100vh;
@@ -215,6 +229,7 @@ section .description .buttons > a {
     padding: 1.2rem 5rem;
     text-decoration: none;
     max-width: 40rem;
+    cursor: pointer;
 }
 
 section .description .buttons > a + a {
