@@ -1,0 +1,254 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --color-text: #171a20;
+    --bg-button1: rgba(34, 34, 34, 0.8);
+    --bg-button2: rgba(255, 255, 255, 0.65);
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'M PLUS 1', sans-serif;
+    color: var(--color-text);
+}
+
+.desktop {
+    display: none;
+}
+
+@media (min-width: 1200px) {
+    .desktop {
+        display: initial;
+    }
+
+    .menu {
+        display: none;
+    }
+}
+
+header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    color: white;
+
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 5rem;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+a.logo {
+    height: 2.4rem;
+    width: 12rem;
+    color: inherit;
+}
+
+header a {
+    color: inherit;
+    font-weight: 500;
+}
+
+header nav a {
+    text-decoration: none;
+    padding: .5rem 1rem;
+}
+
+header nav.center {
+    text-align: center;
+}
+
+header div.help {
+    display: grid;
+    grid-template-columns: 4.5rem 4.5rem 4.5rem;
+    gap: .1rem;
+}
+
+header nav.right {
+    text-align: right;
+}
+
+aside {
+    position: fixed;
+    z-index: 4;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    padding: 2.6rem 1rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+aside svg.arrow {
+    position: inherit;
+    width: 1.5rem;
+
+}
+
+aside svg {
+    position: absolute;
+    right: 0.5rem;
+    margin-right: 2rem;
+    background: none;
+    border: none;
+    width: 2.5rem;
+}
+
+aside a {
+    text-decoration: none;
+    color: var(--color-text);
+    font-weight: 500;
+    font-size: 1.7rem;
+    letter-spacing: .1rem;
+    margin: 0 0 2.6rem .1rem;
+    padding: 1rem 0 1rem 1rem;
+
+    display: flex;
+    justify-content:space-between;
+}
+
+aside a:hover {
+    background-color: rgba(128, 128, 128, 0.171);
+    border-radius: .4rem;
+}
+
+aside button {
+    border: none;
+    cursor: pointer;
+    margin-bottom: 5rem;
+}
+
+aside a svg {
+    width: 2.3rem;
+    background: none;
+    position: absolute;
+    left: 2.2rem;
+}
+
+aside .icon a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+aside .icon a {
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+}
+
+aside .icon p, span {
+    margin-left: 3.5rem;
+}
+
+aside .icon span {
+    font-size: 1.4rem;
+    color: #5c5e62;
+}
+
+section {
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+section .description {
+    display: grid;
+    grid-template-rows: min-content auto min-content;
+
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    padding-top: 10rem;
+    padding-bottom: 1.5rem;
+
+    color: white;
+}
+
+section .description h1 {
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+section .description > p {
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: .1rem;
+    margin-top: .1rem;
+}
+
+section .description span {
+    font-size: 60%;
+    display: block;
+}
+
+section .description a {
+    color: white;
+}
+
+section .description div p {
+    font-size: 1.3rem;
+    font-weight: 500;
+    width: 60rem;
+    margin: 3rem auto 0;
+}
+
+section .description .buttons > a {
+    display: block;
+    font-size: 1.4rem;
+    letter-spacing: .1rem;
+    font-weight: 500;
+    background-color: var(--bg-button2);
+    border-radius: .4rem;
+    color: var(--color-text);
+    padding: 1.2rem 5rem;
+    text-decoration: none;
+    max-width: 40rem;
+}
+
+section .description .buttons > a + a {
+    background-color: var(--bg-button1);
+    color: white;
+}
+
+section .buttons {
+    display: grid;
+    row-gap: 2rem;
+    margin: 0 4rem;
+}
+
+section .description div p {
+    margin-top: 3rem;
+    max-width: 48rem;
+}
+
+@media (min-width: 600px) {
+    section .buttons {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+        max-width: 54.8rem;
+        margin: 0 auto;
+    }
+}
+
+section .description .buttons p {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+section .description .accessories {
+    display: block;
+    padding: 1.2rem 5rem;
+    width: 36rem;
+}
