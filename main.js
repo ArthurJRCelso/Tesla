@@ -3,7 +3,7 @@ const aside = document.querySelector('aside')
 const closeBtn = document.querySelector('.close')
 let width = window.innerWidth;
 let height = window.innerHeight;
-const sections = document.querySelectorAll('section .description')
+const sections = [...document.querySelectorAll('section .description')]
 
 
 menuBtn.addEventListener('click', openMenu)

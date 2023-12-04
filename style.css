@@ -14,7 +14,9 @@
 
 
 
-
+.effect {
+    
+}
 
 
 
@@ -210,6 +212,7 @@ section .description {
     padding-bottom: 1.5rem;
 
     color: white;
+    position: fixed;
 }
 
 section .description h1 {
