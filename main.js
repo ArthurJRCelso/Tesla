@@ -17,13 +17,16 @@ function openMenu(e) {
 }
 
 function closeMenu() {
-    aside.classList.toggle('visibility')
+    aside.classList.remove('visibility')
 }
 
 function closeAuto() {
-    if (window.innerWidth > 600) {
+    if (width > 600) {
       closeMenu();
     }
 }
+
+
+console.log(width)
 
  
