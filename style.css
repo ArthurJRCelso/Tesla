@@ -12,14 +12,6 @@
     --bg-button2: rgba(255, 255, 255, 0.65);
 }
 
-
-
-.effect {
-    
-}
-
-
-
 html {
     scroll-snap-type: y mandatory;
 }
@@ -212,7 +204,25 @@ section .description {
     padding-bottom: 1.5rem;
 
     color: white;
-    position: fixed;
+    
+}
+
+
+.effect {
+    animation: effect .3s;
+    transform:translateY(1.1);
+}
+
+@keyframes effect {
+    0% {
+        opacity: 0;
+        position: fixed;
+        display: none;
+        
+    }  100% {
+        opacity: 1;
+        position: fixed;
+    }
 }
 
 section .description h1 {
