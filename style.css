@@ -204,25 +204,22 @@ section .description {
     padding-bottom: 1.5rem;
 
     color: white;
-    
+
 }
 
 
 .effect {
-    animation: effect .3s;
-    transform:translateY(1.1);
+    animation-name: effect;
+   
+    animation-fill-mode: forwards;
 }
 
 @keyframes effect {
-    0% {
+    0%, 100% {
         opacity: 0;
         position: fixed;
-        display: none;
-        
-    }  100% {
-        opacity: 1;
-        position: fixed;
     }
+    
 }
 
 section .description h1 {
