@@ -204,12 +204,15 @@ section .description {
     padding-bottom: 1.5rem;
 
     color: white;
+    opacity: 1;
 }
 
 
 .effect {
     animation-name: effect;
     animation-fill-mode: forwards;
+    opacity: 1;
+    
 }
 
 @keyframes effect {

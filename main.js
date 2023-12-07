@@ -3,7 +3,7 @@ const aside = document.querySelector('aside')
 const closeBtn = document.querySelector('.close')
 let width = window.innerWidth;
 let height = window.innerHeight;
-let sections = [...document.querySelectorAll('section .description')]
+let sections = document.querySelectorAll('.description')
 
 menuBtn.addEventListener('click', openMenu)
 closeBtn.addEventListener('click', closeMenu)
@@ -35,6 +35,8 @@ function effectTranslate() {
       section.classList.remove('effect')
     }
     lastScrollTop = currentScroll;
+    console.log(lastScrollTop)
   })
   };
+
 
